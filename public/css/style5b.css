@@ -1,0 +1,71 @@
+.stories{
+    margin:20px;
+    font-weight: bold;
+    font-family: 'Ibarra Real Nova', serif;
+}
+.nation{
+    display: flex;
+    align-items: center;
+}
+.bufffalo{
+    display: flex;
+    border-bottom:1px solid #7f8c8d;
+    width:300px;
+    padding:10px 0px;
+}
+.live{
+    display: flex;
+    border-bottom:1px solid #7f8c8d;
+    width:300px;
+    margin-left:20px;
+    padding:10px 0px;
+}
+.world{
+    display: flex;
+    width:300px;
+    padding:10px 0px;
+}
+.war{
+    display: flex;
+    width:300px;
+    margin-left:20px;
+    padding:10px 0px;
+}
+h1{
+    font-style: italic;
+    background-color: #67a3be;
+    width: 630px;
+    
+}
+img{
+    width:100px;
+    height:80px;
+}
+.color{
+    font-size: 10px;
+    padding-top:5px;
+}
+.content{
+    padding-left:10px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold; 
+}
+p{
+    font-size: 15px;
+    width:180px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.red{
+    color:#b33939;
+}
+.blue{
+    color:#227093;
+}
+.tim{
+    color:#474787;
+}
+.green{
+    color:#218c74;
+}

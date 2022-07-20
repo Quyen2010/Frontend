@@ -1,0 +1,36 @@
+body, html {
+  font-family: "open sans", sans-serif;
+  display: flex;
+}
+
+.card {
+  width: 400px;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+}
+.card .topic {
+  padding: 10px;
+}
+.card .topic span {
+  color: white;
+  background-color: #2ecc71;
+  font-size: 12px;
+  border-radius: 50px;
+  padding: 2px 8px;
+  display: inline-block;
+}
+.card .main-image img {
+  width: 100%;
+}
+.card .card-content {
+  padding: 15px;
+}
+.card .card-content h2 {
+  color: #3498db;
+}
+.card .card-content i {
+  color: rgb(163, 152, 152);
+}
+.card .card-content p {
+  margin-top: 10px;
+  letter-spacing: 1px;
+}/*# sourceMappingURL=style4.css.map */

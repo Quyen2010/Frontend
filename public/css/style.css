@@ -1,0 +1,29 @@
+.article{
+    border: 0.1px solid brown;
+    margin-right: 950px;
+    margin-left: 20px;
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+img{
+    width:100%;
+}
+h2{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right:10px;
+}
+p{
+    padding-left: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+}
+.text{
+    background-color:#4b4b4b;
+    color:goldenrod;
+}
+h2.text{
+    margin-top:20px;
+}

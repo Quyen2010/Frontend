@@ -1,0 +1,48 @@
+body, html {
+  font-family: "open sans", sans-serif;
+  display: flex;
+  background-color: rgb(145, 139, 139);
+}
+.card {
+  width: 500px;
+  border: 1px solid rgba(51, 51, 51, 0.5);
+  margin: 10px;
+  background-color: aliceblue;
+}
+.card .topic {
+  padding: 10px;
+}
+.card .topic span {
+  color: white;
+  background-color: #2ecc71;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 50px;
+  padding: 2px 8px;
+  display: inline-block;
+}
+.card .main-image img {
+  width: 100%;
+  height: 300px;
+}
+.card .card-content {
+  padding: 15px;
+}
+.card .card-content h2 {
+  font-size: 20px;
+  color: #3498db;
+}
+.card .card-content i {
+  color: rgb(163, 152, 152);
+  font-size: 13px;
+}
+.card .card-content p {
+  margin-top: 10px;
+  letter-spacing: 1px;
+  font-size: 12px;
+  font-weight: 550;
+}
+
+.thin {
+  height: 480px;
+}/*# sourceMappingURL=style4.css.map */
