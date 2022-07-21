@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="public/css/reset.css">
-    <link rel="stylesheet" href="scss/style7.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&family=Open+Sans:wght@300;400;500&family=Oswald:wght@700&family=Roboto&family=Roboto+Condensed&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/style7.css">
     <title>w3layouts</title>
 </head>
 <body>
     <header>
         <div class="container">
             <div class="news">
-                <a href=""><i class="fa-solid fa-newspaper newspaper-icon"></i><h1>Newblog</h1></a>
+                <a href=""><i class="fa-solid fa-newspaper newspaper-icon"></i><h1>NewsBlog</h1></a>
             </div>
             <div class="search">
                 <div class="icon">
@@ -22,14 +23,147 @@
                 <input type="text"placeholder="Discover news, articles and more">
             </div>
             <nav>
-                <ul>
+                <ul class="main-nav">
                     <li><a href="">Home</a></li>
-                    <li><a href="">More</a></li>
+                    <li>
+                        <a href="">More <span><i class="fa-solid fa-angle-down"></i></span></a>
+                        <ul class="dropdown">
+                            <li><a href="">Beauty</a></li>
+                            <li><a href="">Fashion & Style</a></li>
+                            <li><a href="">Food & Wellness</a></li>
+                            <li><a href="">Lifestyle</a></li>
+                            <li><a href="">404 Page</a></li>
+                        </ul>
+                    </li>
                     <li><a href="">Contact</a></li>
                     <li><i class="fa-solid fa-moon"></i></li>
                 </ul>
             </nav>
         </div>
     </header>
+    <div class="card">
+        <div class="container">
+            <div class="discription">
+                <div class="card-content">
+                    <a href=""><div class="icon"><i class="fa-solid fa-bath"></i></div><p>Beauty</p></a>
+                </div>
+                <div class="card-content">
+                    <a href=""><div class="icon"><i class="fa-solid fa-person-dress"></i></div><p>Fashion & Style</p></a>
+                </div>
+                <div class="card-content">
+                    <a href=""><div class="icon"><i class="fa-solid fa-utensils"></i></div><p>Food & Wellness</p></a>
+                </div>
+                <div class="card-content">
+                    <a href=""><div class="icon"><i class="fa-solid fa-chart-pie"></i></div><p>Lifestyle</p></a>
+                </div>
+            </div>
+            <div class="featured">
+                <div class="featured-content">
+                    <a href=""><span>Featured</span></a>
+                    <a href=""><p>Create an Art that shows the beauty in everyone's ideas of flaws.</p></a>
+                    <input name="gender" type="radio">
+                    <input name="gender" type="radio">
+                    <input name="gender" type="radio">
+                    <input name="gender" type="radio">
+                </div>
+                <div class="rectangle">
+                    <a href=""><img src="public/image/beauty.jpg" alt="makeup"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="food">
+        <div class="container">
+            <p>Top Pick's of this month</p>
+            <div class="layout">
+                <div class="humberger">
+                   <div class="font">
+                        <a href=""><p>Right food baked with natural isngredient, the use of best quality products</p></a>
+                        <div class="release">
+                            <img src="public/image/mmm.jfif" alt="W3layouts">
+                            <div class="release-content">
+                                <span>W3Layouts</span>
+                                <div class="oclock">
+                                    <span>February 22, 2021</span>
+                                    <div class="time">
+                                        <i class="fa-regular fa-clock-eight"></i>
+                                        <span>7:29 am</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                   </div>
+                    <div class="blur-bg"></div>
+                </div>
+                <div class="healty">
+                    <div class="font">
+                         <a href=""><p>The 5 Nonnegotiables of a Healthy Quarantine food that a Doctor-Approved</p></a>
+                         <div class="release">
+                             <img src="public/image/mmm.jfif" alt="W3layouts">
+                             <div class="release-content">
+                                 <span>W3Layouts</span>
+                                 <div class="oclock">
+                                     <span>February 22, 2021</span>
+                                     <div class="time">
+                                        <i class="fa-solid fa-clock-two-thirty"></i>
+                                         <span>7:28 am</span>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                    </div>
+                     <div class="blur-bg"></div>
+                 </div>
+                 <div class="fashi">
+                    <div class="font">
+                        <a href=""><p>Fashion is Creating your Beauty image.The New fashion starts here</p></a>
+                         <div class="release">
+                             <img src="public/image/mmm.jfif" alt="W3layouts">
+                             <div class="release-content">
+                                 <span>W3Layouts</span>
+                                 <div class="oclock">
+                                     <span>February 22, 2021</span>
+                                     <div class="time">
+                                        <i class="fa-solid fa-clock-two-thirty"></i>
+                                         <span>7:26 am</span>
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                    </div>
+                     <div class="blur-bg"></div>
+                 </div>
+            </div>
+        </div>
+    </div>
+    <div class="fashion">
+        <div class="container">
+            <p>Editor's Pick</p>
+            <div class="fashion-content">
+                <div class="rectangle">
+                    <img src="public/image/giay.jpg" alt="trang_phuc">
+                    <div class="contentt">
+                        <div class="topic">
+                            <span>Fashion & Style</span>
+                        </div>
+                        <p>What i'll be Wearing this Party Season & the Festive edit</p>
+                        <div class="release">
+                            <img src="public/image/mmm.jfif" alt="W3layouts">
+                            <div class="release-content">
+                                <span>W3Layouts</span>
+                                <div class="oclock">
+                                    <span>February 22, 2021.</span>
+                                    <div class="time">
+                                        <i class="fa-solid fa-clock-two-thirty"></i>
+                                        <span>7:49 am</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

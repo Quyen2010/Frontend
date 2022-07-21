@@ -1,1 +1,408 @@
-/*# sourceMappingURL=style7.css.map */
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+body, html {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: white;
+}
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+header .container .news a {
+  display: flex;
+  align-items: center;
+}
+header .container .news a h1 {
+  font-size: 25px;
+  color: #333;
+}
+header .container .news .newspaper-icon {
+  color: #1e3799;
+  margin-right: 10px;
+  font-size: 25px;
+}
+header .container nav ul.main-nav {
+  display: flex;
+}
+header .container nav ul.main-nav > li {
+  margin-left: 15px;
+  color: #718096;
+  font-size: 20px;
+  padding: 10px 0px;
+  position: relative;
+}
+header .container nav ul.main-nav > li:hover .dropdown {
+  display: block;
+}
+header .container nav ul.main-nav > li > a {
+  color: #718096;
+}
+header .container nav ul.main-nav > li > a i {
+  font-size: 15px;
+}
+header .container nav ul.main-nav > li > a:hover {
+  color: #0984e3;
+}
+header .container nav ul.dropdown {
+  background-color: white;
+  width: 200px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+header .container nav ul.dropdown li a {
+  color: #718096;
+  padding: 5px;
+  display: block;
+}
+header .container nav ul.dropdown li a:hover {
+  color: #0984e3;
+  box-shadow: 4px 0px 5px 3px rgba(176, 188, 199, 0.6);
+}
+header .search {
+  display: flex;
+  justify-content: center;
+}
+header .search input {
+  color: #949698;
+  padding: 15px 25px 15px 0px;
+  background-color: #f4f4f4;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  width: 350px;
+  font-size: 16px;
+}
+header .search .icon {
+  color: #989da4;
+  font-size: 15px;
+  width: 60px;
+  padding: 0px 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #f4f4f4;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.card {
+  background-color: #f9f3f3;
+  padding: 50px;
+  height: 800px;
+}
+.card .container .discription {
+  display: flex;
+  justify-content: space-between;
+}
+.card .container .discription .card-content {
+  background-color: white;
+  margin: 10px;
+  width: 300px;
+  border-radius: 10px;
+  padding: 20px 0px;
+}
+.card .container .discription .card-content:hover {
+  transform: translateY(-3px);
+  box-shadow: 5px 0px 5px 3px rgba(176, 188, 199, 0.6);
+}
+.card .container .discription .card-content a .icon {
+  Color: #0984e3;
+  font-size: 25px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.card .container .discription .card-content a p {
+  font-size: 18px;
+  font-weight: bold;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.card .container .featured {
+  display: flex;
+  height: 450PX;
+  margin-top: 80px;
+  position: relative;
+}
+.card .container .featured .featured-content {
+  margin: 50px;
+}
+.card .container .featured .featured-content a span {
+  border-radius: 20px;
+  background-color: #dbeaf5;
+  padding: 8px 15px;
+  color: #0984e3;
+  font-weight: 600;
+  font-size: 15px;
+  display: inline-block;
+  margin: 40px 0px;
+}
+.card .container .featured .featured-content a p {
+  font-family: "Ibarra Real Nova", serif;
+  width: 700px;
+  font-size: 50px;
+  margin-bottom: 90px;
+  color: black;
+}
+.card .container .featured .featured-content input {
+  color: white;
+}
+.card .container .featured .featured-content input:hover[type=radio] {
+  color: #0743d0;
+}
+.card .container .featured .rectangle a img {
+  position: absolute;
+  top: 0px;
+  right: 30px;
+  display: block;
+  width: 350px;
+  height: 450px;
+  border-radius: 15px;
+}
+
+.food {
+  height: 600px;
+}
+.food .container > p {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 30px;
+  margin: 100px 50px 30px;
+}
+.food .container .layout {
+  display: flex;
+  margin: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+.food .container .layout .humberger {
+  background: url(../image/humberger.jfif) no-repeat center/cover;
+  border: 1px solid #333;
+  height: 450px;
+  width: 350px;
+  border-radius: 20px;
+  position: relative;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+}
+.food .container .layout .humberger:hover {
+  transform: translateY(-8px);
+}
+.food .container .layout .humberger .font {
+  margin: 0px 20px;
+  z-index: 1;
+}
+.food .container .layout .humberger .font a p {
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: left;
+}
+.food .container .layout .humberger .font .release {
+  display: flex;
+  color: white;
+  margin: 20px 20px 20px 10px;
+}
+.food .container .layout .humberger .font .release img {
+  bottom: 0;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+.food .container .layout .humberger .font .release .release-content > span {
+  display: block;
+  margin: 10px 0px;
+}
+.food .container .layout .humberger .font .release .release-content .oclock {
+  display: flex;
+}
+.food .container .layout .humberger .blur-bg {
+  position: absolute;
+  height: 450px;
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  z-index: 0;
+}
+.food .container .layout .fashi {
+  background: url(../image/fashion.jpg) no-repeat center/cover;
+  border: 1px solid #333;
+  height: 450px;
+  width: 350px;
+  border-radius: 20px;
+  position: relative;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+}
+.food .container .layout .fashi:hover {
+  transform: translateY(-8px);
+}
+.food .container .layout .fashi .font {
+  margin: 0px 20px;
+  z-index: 1;
+}
+.food .container .layout .fashi .font a p {
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: left;
+}
+.food .container .layout .fashi .font .release {
+  display: flex;
+  color: white;
+  margin: 20px 20px 20px 10px;
+}
+.food .container .layout .fashi .font .release img {
+  bottom: 0;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+.food .container .layout .fashi .font .release .release-content > span {
+  display: block;
+  margin: 10px 0px;
+}
+.food .container .layout .fashi .font .release .release-content .oclock {
+  display: flex;
+}
+.food .container .layout .fashi .blur-bg {
+  position: absolute;
+  height: 450px;
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  z-index: 0;
+}
+.food .container .layout .healty {
+  background: url(../image/healty-quaratie.jpg) no-repeat center/cover;
+  border: 1px solid #333;
+  height: 450px;
+  width: 350px;
+  border-radius: 20px;
+  position: relative;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+}
+.food .container .layout .healty:hover {
+  transform: translateY(-8px);
+}
+.food .container .layout .healty .font {
+  margin: 0px 20px;
+  z-index: 1;
+}
+.food .container .layout .healty .font a p {
+  color: white;
+  font-weight: 600;
+  font-size: 25px;
+  text-align: left;
+}
+.food .container .layout .healty .font .release {
+  display: flex;
+  color: white;
+  margin: 20px 20px 20px 10px;
+}
+.food .container .layout .healty .font .release img {
+  bottom: 0;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+.food .container .layout .healty .font .release .release-content > span {
+  display: block;
+  margin: 10px 0px;
+}
+.food .container .layout .healty .font .release .release-content .oclock {
+  display: flex;
+}
+.food .container .layout .healty .blur-bg {
+  position: absolute;
+  height: 450px;
+  width: 350px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  z-index: 0;
+}
+
+.fashion {
+  background-color: #f9f3f3;
+  height: 800px;
+}
+.fashion .container {
+  background-color: #0743d0;
+  padding: 30px;
+}
+.fashion .container > p {
+  background-color: #718096;
+  font-size: 30px;
+  margin: 100px 0px 30px;
+}
+.fashion .container .fashion-content .rectangle {
+  background-color: white;
+  border: 1px solid white;
+  height: 500px;
+  width: 300px;
+  border-radius: 20px;
+}
+.fashion .container .fashion-content .rectangle img {
+  width: 100%;
+  height: 40%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.fashion .container .fashion-content .rectangle .contentt {
+  margin: 20px 0px 20px 20px;
+}
+.fashion .container .fashion-content .rectangle .contentt .topic {
+  background-color: #d3e6f5;
+  border-radius: 20px;
+  width: 150px;
+  padding: 8px;
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  color: #0743d0;
+}
+.fashion .container .fashion-content .rectangle .contentt p {
+  font-size: 25px;
+  margin: 25px 0px;
+}
+.fashion .container .fashion-content .rectangle .contentt .release {
+  display: flex;
+  color: black;
+}
+.fashion .container .fashion-content .rectangle .contentt .release img {
+  bottom: 0;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+  margin-right: 10px;
+}
+.fashion .container .fashion-content .rectangle .contentt .release .release-content > span {
+  display: block;
+  margin: 10px 0px;
+  z-index: 1;
+}
+.fashion .container .fashion-content .rectangle .contentt .release .release-content .oclock {
+  display: flex;
+  z-index: 1;
+}/*# sourceMappingURL=style7.css.map */
