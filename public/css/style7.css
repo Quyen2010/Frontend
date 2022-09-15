@@ -1,5 +1,5 @@
 .container {
-  width: 1200px;
+  width: 1100px;
   margin: 0 auto;
 }
 
@@ -14,15 +14,15 @@ header .container {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 0px;
 }
 header .container .news a {
   display: flex;
   align-items: center;
 }
-header .container .news a h1 {
+header .container .news a h2 {
   font-size: 25px;
-  color: #333;
+  color: #000000;
 }
 header .container .news .newspaper-icon {
   color: #1e3799;
@@ -35,7 +35,7 @@ header .container nav ul.main-nav {
 header .container nav ul.main-nav > li {
   margin-left: 15px;
   color: #718096;
-  font-size: 20px;
+  font-size: 15px;
   padding: 10px 0px;
   position: relative;
 }
@@ -70,28 +70,38 @@ header .container nav ul.dropdown li a:hover {
 }
 header .search {
   display: flex;
-  justify-content: center;
 }
 header .search input {
   color: #949698;
-  padding: 15px 25px 15px 0px;
+  padding: 12px 0px;
   background-color: #f4f4f4;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  width: 350px;
-  font-size: 16px;
+  width: 300px;
+  font-size: 15px;
+}
+header .search inputhover .iconx {
+  display: block;
 }
 header .search .icon {
   color: #989da4;
-  font-size: 15px;
-  width: 60px;
-  padding: 0px 10px;
+  font-size: 13px;
+  width: 40px;
   align-items: center;
   justify-content: center;
   display: flex;
   background-color: #f4f4f4;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+header .search .iconx {
+  display: none;
+  padding-right: 20px;
+  color: #192a56;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: #f4f4f4;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
 }
 
 .card {
@@ -101,33 +111,41 @@ header .search .icon {
 }
 .card .container .discription {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .card .container .discription .card-content {
-  background-color: white;
-  margin: 10px;
-  width: 300px;
+  width: 25%;
+  padding: 10px;
+}
+.card .container .discription .card-content .icon {
+  padding: 10px;
   border-radius: 10px;
-  padding: 20px 0px;
+  border: 1px solid white;
+  background-color: white;
+  transition: 0.5s;
 }
-.card .container .discription .card-content:hover {
-  transform: translateY(-3px);
-  box-shadow: 5px 0px 5px 3px rgba(176, 188, 199, 0.6);
+.card .container .discription .card-content .icon:hover {
+  transform: translateY(-4px);
+  box-shadow: 0px 3px 5px 2px rgba(176, 188, 199, 0.5);
 }
-.card .container .discription .card-content a .icon {
+.card .container .discription .card-content .icon:hover a {
+  color: #0984e3;
+}
+.card .container .discription .card-content .icon a i {
   Color: #0984e3;
   font-size: 25px;
   justify-content: center;
   display: flex;
   align-items: center;
 }
-.card .container .discription .card-content a p {
+.card .container .discription .card-content .icon p a {
   font-size: 18px;
   font-weight: bold;
+  margin-top: 20px;
   justify-content: center;
   display: flex;
   align-items: center;
-  margin-top: 20px;
+  color: #7f8fa6;
 }
 .card .container .featured {
   display: flex;
@@ -136,35 +154,73 @@ header .search .icon {
   position: relative;
 }
 .card .container .featured .featured-content {
-  margin: 50px;
+  margin: 50px 0px;
 }
-.card .container .featured .featured-content a span {
+.card .container .featured .featured-content > a {
+  display: inline-block;
   border-radius: 20px;
-  background-color: #dbeaf5;
+  background-color: #dfe4ea;
   padding: 8px 15px;
-  color: #0984e3;
   font-weight: 600;
   font-size: 15px;
   display: inline-block;
   margin: 40px 0px;
+  transition: 0.3s;
+  color: #227093;
 }
-.card .container .featured .featured-content a p {
+.card .container .featured .featured-content > a:hover {
+  color: #074053;
+}
+.card .container .featured .featured-content h1 a {
+  display: inline-block;
+  background-color: #f9f3f3;
   font-family: "Ibarra Real Nova", serif;
   width: 700px;
   font-size: 50px;
-  margin-bottom: 90px;
+  margin-bottom: 80px;
   color: black;
 }
-.card .container .featured .featured-content input {
-  color: white;
+.card .container .featured .featured-content form {
+  display: flex;
 }
-.card .container .featured .featured-content input:hover[type=radio] {
-  color: #0743d0;
+.card .container .featured .featured-content form .input-group {
+  margin: 15px;
+}
+.card .container .featured .featured-content form .input-group input {
+  display: none;
+}
+.card .container .featured .featured-content form .input-group input:checked ~ label::after {
+  background-color: #5352ed;
+}
+.card .container .featured .featured-content form .input-group label {
+  position: relative;
+}
+.card .container .featured .featured-content form .input-group label::after {
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -6px;
+  transition: 0.3s;
+  transform: translateX(-50%) translateY(-50%);
+}
+.card .container .featured .featured-content form .input-group label::before {
+  content: "";
+  background-color: #bdc3c7;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -6px;
+  transform: translateX(-50%) translateY(-50%);
 }
 .card .container .featured .rectangle a img {
   position: absolute;
   top: 0px;
-  right: 30px;
+  right: 0px;
   display: block;
   width: 350px;
   height: 450px;
@@ -174,14 +230,14 @@ header .search .icon {
 .food {
   height: 600px;
 }
-.food .container > p {
+.food .container h2 {
   font-family: "Ibarra Real Nova", serif;
   font-size: 30px;
-  margin: 100px 50px 30px;
+  margin: 100px 0px 30px;
 }
 .food .container .layout {
   display: flex;
-  margin: 50px;
+  margin: 50px 0px;
   align-items: center;
   justify-content: space-between;
 }
@@ -195,15 +251,17 @@ header .search .icon {
   justify-content: center;
   align-items: flex-end;
   display: flex;
+  transition: 0.5s;
 }
 .food .container .layout .humberger:hover {
   transform: translateY(-8px);
+  box-shadow: 0px 3px 5px 2px rgba(171, 178, 185, 0.5);
 }
 .food .container .layout .humberger .font {
   margin: 0px 20px;
   z-index: 1;
 }
-.food .container .layout .humberger .font a p {
+.food .container .layout .humberger .font p a {
   color: white;
   font-weight: 600;
   font-size: 25px;
@@ -220,14 +278,22 @@ header .search .icon {
   width: 60px;
   height: 60px;
   border-radius: 40px;
-  margin-right: 10px;
 }
-.food .container .layout .humberger .font .release .release-content > span {
+.food .container .layout .humberger .font .release .release-content {
+  margin-left: 10px;
+}
+.food .container .layout .humberger .font .release .release-content a {
+  color: white;
   display: block;
   margin: 10px 0px;
+  font-size: 16px;
 }
 .food .container .layout .humberger .font .release .release-content .oclock {
   display: flex;
+  font-size: 14px;
+}
+.food .container .layout .humberger .font .release .release-content .oclock .time {
+  margin-left: 10px;
 }
 .food .container .layout .humberger .blur-bg {
   position: absolute;
@@ -247,15 +313,17 @@ header .search .icon {
   justify-content: center;
   align-items: flex-end;
   display: flex;
+  transition: 0.5s;
 }
 .food .container .layout .fashi:hover {
   transform: translateY(-8px);
+  box-shadow: 0px 3px 5px 2px rgba(171, 178, 185, 0.5);
 }
 .food .container .layout .fashi .font {
   margin: 0px 20px;
   z-index: 1;
 }
-.food .container .layout .fashi .font a p {
+.food .container .layout .fashi .font p a {
   color: white;
   font-weight: 600;
   font-size: 25px;
@@ -272,14 +340,22 @@ header .search .icon {
   width: 60px;
   height: 60px;
   border-radius: 40px;
-  margin-right: 10px;
 }
-.food .container .layout .fashi .font .release .release-content > span {
+.food .container .layout .fashi .font .release .release-content {
+  margin-left: 10px;
+}
+.food .container .layout .fashi .font .release .release-content a {
+  color: white;
   display: block;
   margin: 10px 0px;
+  font-size: 16px;
 }
 .food .container .layout .fashi .font .release .release-content .oclock {
   display: flex;
+  font-size: 14px;
+}
+.food .container .layout .fashi .font .release .release-content .oclock .time {
+  margin-left: 10px;
 }
 .food .container .layout .fashi .blur-bg {
   position: absolute;
@@ -299,15 +375,17 @@ header .search .icon {
   justify-content: center;
   align-items: flex-end;
   display: flex;
+  transition: 0.5s;
 }
 .food .container .layout .healty:hover {
   transform: translateY(-8px);
+  box-shadow: 0px 3px 5px 2px rgba(171, 178, 185, 0.5);
 }
 .food .container .layout .healty .font {
   margin: 0px 20px;
   z-index: 1;
 }
-.food .container .layout .healty .font a p {
+.food .container .layout .healty .font p a {
   color: white;
   font-weight: 600;
   font-size: 25px;
@@ -324,14 +402,22 @@ header .search .icon {
   width: 60px;
   height: 60px;
   border-radius: 40px;
-  margin-right: 10px;
 }
-.food .container .layout .healty .font .release .release-content > span {
+.food .container .layout .healty .font .release .release-content {
+  margin-left: 10px;
+}
+.food .container .layout .healty .font .release .release-content a {
+  color: white;
   display: block;
   margin: 10px 0px;
+  font-size: 16px;
 }
 .food .container .layout .healty .font .release .release-content .oclock {
   display: flex;
+  font-size: 14px;
+}
+.food .container .layout .healty .font .release .release-content .oclock .time {
+  margin-left: 10px;
 }
 .food .container .layout .healty .blur-bg {
   position: absolute;
@@ -344,65 +430,767 @@ header .search .icon {
 
 .fashion {
   background-color: #f9f3f3;
-  height: 800px;
+  height: 2000px;
 }
-.fashion .container {
-  background-color: #0743d0;
-  padding: 30px;
+.fashion .container .group {
+  display: flex;
 }
-.fashion .container > p {
-  background-color: #718096;
+.fashion .container .group .editorpick h2 {
+  font-family: "Ibarra Real Nova", serif;
   font-size: 30px;
   margin: 100px 0px 30px;
 }
-.fashion .container .fashion-content .rectangle {
+.fashion .container .group .editorpick .fashion-content {
+  display: flex;
+  width: 725px;
+  justify-content: space-between;
+}
+.fashion .container .group .editorpick .fashion-content .rectangle {
   background-color: white;
   border: 1px solid white;
   height: 500px;
-  width: 300px;
+  width: 350px;
   border-radius: 20px;
+  transition: 0.5s;
 }
-.fashion .container .fashion-content .rectangle img {
+.fashion .container .group .editorpick .fashion-content .rectangle:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 3px 5px 2px rgba(171, 178, 185, 0.5);
+}
+.fashion .container .group .editorpick .fashion-content .rectangle img {
+  display: block;
   width: 100%;
-  height: 40%;
+  height: 50%;
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
 }
-.fashion .container .fashion-content .rectangle .contentt {
-  margin: 20px 0px 20px 20px;
+.fashion .container .group .editorpick .fashion-content .rectangle .contentt {
+  margin: 25px;
 }
-.fashion .container .fashion-content .rectangle .contentt .topic {
-  background-color: #d3e6f5;
-  border-radius: 20px;
+.fashion .container .group .editorpick .fashion-content .rectangle .contentt .topic {
+  background-color: #dfe4ea;
+  border-radius: 15px;
   width: 150px;
   padding: 8px;
   text-align: center;
   display: block;
+  font-family: "Roboto", sans-serif;
   font-weight: bold;
-  color: #0743d0;
+  transition: 0.3s;
+  font-size: 15px;
 }
-.fashion .container .fashion-content .rectangle .contentt p {
-  font-size: 25px;
+.fashion .container .group .editorpick .fashion-content .rectangle .contentt .topic a {
+  color: #227093;
+}
+.fashion .container .group .editorpick .fashion-content .rectangle .contentt .topic a:hover {
+  color: #074053;
+}
+.fashion .container .group .editorpick .fashion-content .rectangle .contentt p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
   margin: 25px 0px;
+  font-weight: bold;
 }
-.fashion .container .fashion-content .rectangle .contentt .release {
+.fashion .container .group .editorpick .fashion-content .rectangle .contentt p a {
+  color: #000000;
+}
+.fashion .container .group .editorpick .fashion-content .rectangle .contentt p a:hover {
+  color: #227093;
+}
+.fashion .container .group .editorpick .fashion-content .rectangle .contentt .release {
   display: flex;
   color: black;
 }
-.fashion .container .fashion-content .rectangle .contentt .release img {
+.fashion .container .group .editorpick .fashion-content .rectangle .contentt .release img {
   bottom: 0;
   display: block;
   width: 60px;
   height: 60px;
   border-radius: 40px;
-  margin-right: 10px;
 }
-.fashion .container .fashion-content .rectangle .contentt .release .release-content > span {
+.fashion .container .group .editorpick .fashion-content .rectangle .contentt .release .release-content {
+  margin-left: 10px;
+}
+.fashion .container .group .editorpick .fashion-content .rectangle .contentt .release .release-content a {
+  color: #000000;
   display: block;
   margin: 10px 0px;
-  z-index: 1;
+  font-size: 16px;
 }
-.fashion .container .fashion-content .rectangle .contentt .release .release-content .oclock {
+.fashion .container .group .editorpick .fashion-content .rectangle .contentt .release .release-content .oclock {
+  color: #718096;
   display: flex;
-  z-index: 1;
+  font-size: 14px;
+}
+.fashion .container .group .editorpick .fashion-content .rectangle .contentt .release .release-content .oclock .time {
+  margin-left: 10px;
+}
+.fashion .container .group nav h2 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 30px;
+  margin: 100px 40px 30px 25px;
+  display: block;
+}
+.fashion .container .group nav ul li {
+  background-color: white;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  margin: 20px 20px 20px 25px;
+  padding: 18px;
+  width: 360px;
+  border-radius: 15px;
+}
+.fashion .container .group nav ul li a {
+  display: block;
+  color: #94a3b9;
+}
+.fashion .container .group nav ul li a:hover {
+  color: #227093;
+}
+.fashion .container .group2 {
+  display: flex;
+}
+.fashion .container .group2 .editorpick .fashion-content {
+  display: flex;
+  width: 725px;
+  justify-content: space-between;
+}
+.fashion .container .group2 .editorpick .fashion-content .rectangle {
+  background-color: white;
+  border: 1px solid white;
+  height: 500px;
+  width: 350px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.fashion .container .group2 .editorpick .fashion-content .rectangle:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 3px 5px 2px rgba(171, 178, 185, 0.5);
+}
+.fashion .container .group2 .editorpick .fashion-content .rectangle img {
+  width: 100%;
+  height: 50%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.fashion .container .group2 .editorpick .fashion-content .rectangle .contentt {
+  margin: 25px;
+}
+.fashion .container .group2 .editorpick .fashion-content .rectangle .contentt .topic {
+  background-color: #dfe4ea;
+  border-radius: 15px;
+  width: 150px;
+  padding: 8px;
+  text-align: center;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 15px;
+}
+.fashion .container .group2 .editorpick .fashion-content .rectangle .contentt .topic a {
+  color: #227093;
+}
+.fashion .container .group2 .editorpick .fashion-content .rectangle .contentt .topic a:hover {
+  color: #074053;
+}
+.fashion .container .group2 .editorpick .fashion-content .rectangle .contentt p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin: 25px 0px;
+  font-weight: bold;
+}
+.fashion .container .group2 .editorpick .fashion-content .rectangle .contentt p a {
+  color: #000000;
+}
+.fashion .container .group2 .editorpick .fashion-content .rectangle .contentt p a:hover {
+  color: #227093;
+}
+.fashion .container .group2 .editorpick .fashion-content .rectangle .contentt .release {
+  display: flex;
+  color: black;
+}
+.fashion .container .group2 .editorpick .fashion-content .rectangle .contentt .release img {
+  bottom: 0;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+}
+.fashion .container .group2 .editorpick .fashion-content .rectangle .contentt .release .release-content {
+  margin-left: 10px;
+}
+.fashion .container .group2 .editorpick .fashion-content .rectangle .contentt .release .release-content a {
+  color: #000000;
+  display: block;
+  margin: 10px 0px;
+  font-size: 16px;
+}
+.fashion .container .group2 .editorpick .fashion-content .rectangle .contentt .release .release-content .oclock {
+  color: #718096;
+  display: flex;
+  font-size: 14px;
+}
+.fashion .container .group2 .editorpick .fashion-content .rectangle .contentt .release .release-content .oclock .time {
+  margin-left: 10px;
+}
+.fashion .container .group2 .sponsers h3 {
+  display: block;
+  color: black;
+  margin: 50px 25px 35px;
+  font-size: 28px;
+  font-family: "Ibarra Real Nova", serif;
+}
+.fashion .container .group2 .sponsers a {
+  display: block;
+}
+.fashion .container .group2 .sponsers a img {
+  display: block;
+  height: 250px;
+  width: 350px;
+  margin-left: 25px;
+  border-radius: 20px;
+}
+.fashion .container .group2 .sponsers a p {
+  color: #718096;
+  text-align: center;
+  font-size: 13px;
+}
+.fashion .container .group2 .sponsers a p:hover {
+  color: #074053;
+}
+.fashion .container .advertise {
+  background-color: #074053;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid white;
+  background-color: white;
+  width: 750px;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 18px;
+}
+.fashion .container .advertise h2 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 35px;
+}
+.fashion .container .advertise a {
+  display: block;
+  color: white;
+  background-color: #5352ed;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.4s;
+}
+.fashion .container .advertise a:hover {
+  background-color: #2e2e90;
+}
+.fashion .container .group3 {
+  display: flex;
+}
+.fashion .container .group3 .editorpick .fashionandstyle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 20px;
+}
+.fashion .container .group3 .editorpick .fashionandstyle h2 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 30px;
+  margin: 10px 0px;
+}
+.fashion .container .group3 .editorpick .fashionandstyle a {
+  display: block;
+  padding: 8px 15px;
+  margin: 10px 0px;
+  background-color: #ced6e0;
+  color: #57606f;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.6s;
+}
+.fashion .container .group3 .editorpick .fashionandstyle a:hover {
+  background-color: #5352ed;
+  color: white;
+}
+.fashion .container .group3 .editorpick .fashion-content {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+}
+.fashion .container .group3 .editorpick .fashion-content .rectangle {
+  background-color: white;
+  border: 1px solid white;
+  height: 400px;
+  width: 350px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.fashion .container .group3 .editorpick .fashion-content .rectangle:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 3px 5px 2px rgba(171, 178, 185, 0.5);
+}
+.fashion .container .group3 .editorpick .fashion-content .rectangle img {
+  width: 100%;
+  height: 50%;
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+}
+.fashion .container .group3 .editorpick .fashion-content .rectangle .contentt {
+  margin: 30px;
+}
+.fashion .container .group3 .editorpick .fashion-content .rectangle .contentt p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin: 25px 0px;
+  font-weight: bold;
+}
+.fashion .container .group3 .editorpick .fashion-content .rectangle .contentt p a {
+  color: #000000;
+}
+.fashion .container .group3 .editorpick .fashion-content .rectangle .contentt p a:hover {
+  color: #227093;
+}
+.fashion .container .group3 .editorpick .fashion-content .rectangle .contentt .release {
+  display: flex;
+  color: black;
+}
+.fashion .container .group3 .editorpick .fashion-content .rectangle .contentt .release img {
+  bottom: 0;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+}
+.fashion .container .group3 .editorpick .fashion-content .rectangle .contentt .release .release-content {
+  margin-left: 10px;
+}
+.fashion .container .group3 .editorpick .fashion-content .rectangle .contentt .release .release-content a {
+  color: #000000;
+  display: block;
+  margin: 10px 0px;
+  font-size: 16px;
+}
+.fashion .container .group3 .editorpick .fashion-content .rectangle .contentt .release .release-content .oclock {
+  color: #718096;
+  display: flex;
+  font-size: 14px;
+}
+.fashion .container .group3 .editorpick .fashion-content .rectangle .contentt .release .release-content .oclock .time {
+  margin-left: 10px;
+}
+
+.beauty {
+  height: 800px;
+  background-color: #e4dcdc;
+}
+.beauty .container .viewmore {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 0px 20px;
+}
+.beauty .container .viewmore h2 {
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 30px;
+}
+.beauty .container .viewmore a {
+  display: block;
+  padding: 8px 15px;
+  background-color: #ced6e0;
+  color: #57606f;
+  border-radius: 15px;
+  text-align: center;
+  transition: 0.6s;
+}
+.beauty .container .viewmore a:hover {
+  background-color: #5352ed;
+  color: white;
+}
+.beauty .container .layout1 {
+  display: flex;
+  justify-content: space-between;
+}
+.beauty .container .layout1 .frame {
+  background-color: white;
+  border-radius: 20px;
+  width: 540px;
+  height: 280px;
+  display: flex;
+  transition: 0.5s;
+}
+.beauty .container .layout1 .frame:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 3px 5px 2px rgba(171, 178, 185, 0.5);
+}
+.beauty .container .layout1 .frame a img {
+  display: block;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 280px;
+  width: 220px;
+}
+.beauty .container .layout1 .frame .frame-content {
+  margin: 70px 40px 70px 20px;
+}
+.beauty .container .layout1 .frame .frame-content p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.beauty .container .layout1 .frame .frame-content p a {
+  color: #000000;
+}
+.beauty .container .layout1 .frame .frame-content p a:hover {
+  color: #227093;
+}
+.beauty .container .layout1 .frame .frame-content .release {
+  display: flex;
+  color: black;
+}
+.beauty .container .layout1 .frame .frame-content .release img {
+  bottom: 0;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+}
+.beauty .container .layout1 .frame .frame-content .release .release-content {
+  margin-left: 10px;
+}
+.beauty .container .layout1 .frame .frame-content .release .release-content a {
+  color: #000000;
+  display: block;
+  margin: 10px 0px;
+  font-size: 17px;
+}
+.beauty .container .layout1 .frame .frame-content .release .release-content .oclock {
+  color: #718096;
+  display: flex;
+  font-size: 14px;
+}
+.beauty .container .layout1 .frame .frame-content .release .release-content .oclock .time {
+  margin-left: 10px;
+}
+.beauty .container .layout2 {
+  display: flex;
+  justify-content: space-between;
+}
+.beauty .container .layout2 .frame {
+  background-color: red;
+  margin: 25px 0px;
+  background-color: white;
+  border-radius: 20px;
+  width: 540px;
+  height: 280px;
+  display: flex;
+  transition: 0.5s;
+}
+.beauty .container .layout2 .frame:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 3px 5px 2px rgba(171, 178, 185, 0.5);
+}
+.beauty .container .layout2 .frame a img {
+  display: block;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 280px;
+  width: 220px;
+}
+.beauty .container .layout2 .frame .frame-content {
+  margin: 70px 40px 70px 20px;
+}
+.beauty .container .layout2 .frame .frame-content p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+.beauty .container .layout2 .frame .frame-content p a {
+  color: #000000;
+}
+.beauty .container .layout2 .frame .frame-content p a:hover {
+  color: #227093;
+}
+.beauty .container .layout2 .frame .frame-content .release {
+  display: flex;
+  color: black;
+}
+.beauty .container .layout2 .frame .frame-content .release img {
+  bottom: 0;
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+}
+.beauty .container .layout2 .frame .frame-content .release .release-content {
+  margin-left: 10px;
+}
+.beauty .container .layout2 .frame .frame-content .release .release-content a {
+  color: #000000;
+  display: block;
+  margin: 10px 0px;
+  font-size: 17px;
+}
+.beauty .container .layout2 .frame .frame-content .release .release-content .oclock {
+  color: #718096;
+  display: flex;
+  font-size: 14px;
+}
+.beauty .container .layout2 .frame .frame-content .release .release-content .oclock .time {
+  margin-left: 10px;
+}
+
+.trending {
+  height: 480px;
+  background-color: #f5ecec;
+}
+.trending .container .viewmore {
+  padding: 50px 0px 20px;
+}
+.trending .container .viewmore h2 {
+  margin-top: 30px;
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 30px;
+}
+.trending .container .layout {
+  display: flex;
+  justify-content: space-between;
+}
+.trending .container .layout .frame {
+  background-color: white;
+  border-radius: 20px;
+  width: 540px;
+  height: 280px;
+  display: flex;
+  transition: 0.5s;
+}
+.trending .container .layout .frame:hover {
+  transform: translateY(-8px);
+  box-shadow: 0px 3px 5px 2px rgba(171, 178, 185, 0.5);
+}
+.trending .container .layout .frame a img {
+  display: block;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  height: 280px;
+  width: 220px;
+}
+.trending .container .layout .frame .frame-content {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  margin: 25px;
+}
+.trending .container .layout .frame .frame-content .topic {
+  background-color: #dfe4ea;
+  border-radius: 15px;
+  width: 90px;
+  padding: 8px;
+  margin-top: 30px;
+  text-align: center;
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  transition: 0.3s;
+  font-size: 15px;
+}
+.trending .container .layout .frame .frame-content .topic a {
+  color: #227093;
+}
+.trending .container .layout .frame .frame-content .topic a:hover {
+  color: #074053;
+}
+.trending .container .layout .frame .frame-content p {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  margin: 20px 0px;
+  font-weight: bold;
+}
+.trending .container .layout .frame .frame-content p a {
+  color: #000000;
+}
+.trending .container .layout .frame .frame-content p a:hover {
+  color: #227093;
+}
+.trending .container .layout .frame .frame-content .release {
+  display: flex;
+  color: black;
+}
+.trending .container .layout .frame .frame-content .release img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 40px;
+}
+.trending .container .layout .frame .frame-content .release .release-content {
+  margin-left: 10px;
+}
+.trending .container .layout .frame .frame-content .release .release-content a {
+  color: #000000;
+  display: block;
+  margin: 10px 0px;
+  font-size: 16px;
+}
+.trending .container .layout .frame .frame-content .release .release-content .oclock {
+  color: #718096;
+  display: flex;
+  font-size: 14px;
+}
+.trending .container .layout .frame .frame-content .release .release-content .oclock .time {
+  margin-left: 10px;
+}
+
+.respond {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e4dcdc;
+  height: 520px;
+}
+.respond .container .content {
+  background-color: white;
+  height: 350px;
+  border-radius: 20px;
+  text-align: center;
+}
+.respond .container .content h2 {
+  font-size: 30px;
+  padding-top: 80px;
+  font-family: "Ibarra Real Nova", serif;
+}
+.respond .container .content p {
+  color: #718096;
+  font-size: 18px;
+  margin: 20px 0px 50px;
+  font-family: "Roboto", sans-serif;
+}
+.respond .container .content .address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.respond .container .content .address input {
+  background-color: #f4f4f4;
+  padding: 15px 20px;
+  width: 400px;
+  color: #949698;
+  font-size: 15px;
+  border-radius: 10px;
+}
+.respond .container .content .address a {
+  display: block;
+  color: white;
+  background-color: #5352ed;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.4s;
+}
+.respond .container .content .address a:hover {
+  background-color: #2e2e90;
+}
+
+footer {
+  height: 450px;
+}
+footer .container .information {
+  display: flex;
+  margin-top: 80px;
+}
+footer .container .information .newblog .news {
+  display: flex;
+}
+footer .container .information .newblog .news h2 {
+  font-size: 25px;
+}
+footer .container .information .newblog .news h2 a {
+  color: #000000;
+}
+footer .container .information .newblog .news .newspaper-icon {
+  color: #1e3799;
+  margin-right: 10px;
+  font-size: 25px;
+}
+footer .container .information .newblog .icon-circle {
+  display: flex;
+}
+footer .container .information .newblog .icon-circle .circle {
+  display: block;
+  padding-top: 15px;
+  margin-right: 5px;
+  color: #718096;
+}
+footer .container .information .newblog .icon-circle h3 {
+  color: #718096;
+  margin: 15px 0px;
+  font-size: 18px;
+  font-weight: 100;
+}
+footer .container .information .newblog p {
+  font-size: 25px;
+  font-family: "Ibarra Real Nova", serif;
+}
+footer .container .information .newblog p a {
+  font-family: "Ibarra Real Nova", serif;
+  color: #0743d0;
+}
+footer .container .information .Resent_post {
+  margin-left: 200px;
+  width: 200px;
+}
+footer .container .information .Resent_post h2 {
+  font-size: 25px;
+  font-family: "Ibarra Real Nova", serif;
+}
+footer .container .information .Resent_post p {
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  margin-top: 20px;
+}
+footer .container .information .Resent_post p a {
+  color: #718096;
+}
+footer .container .information .Resent_post span {
+  display: block;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+  color: #718096;
+  font-size: 12px;
+}
+footer .container .information .Caegories ul {
+  margin-left: 40px;
+  font-family: "Ibarra Real Nova", serif;
+  font-size: 25px;
+}
+footer .container .information .Caegories ul li a {
+  font-family: "Roboto", sans-serif;
+  display: block;
+  margin-top: 10px;
+  font-size: 18px;
+  color: #718096;
+}
+footer .container .information .Social-media {
+  margin-left: 130px;
+}
+footer .container .information .Social-media ul {
+  font-size: 25px;
+  font-family: "Ibarra Real Nova", serif;
+}
+footer .container .information .Social-media ul li a {
+  font-size: 18px;
+  color: #718096;
+  font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (min-with: 46.25em) and (max-with: 63.9375em) {
+  header .container .new a {
+    display: none;
+  }
+  header .container nav {
+    display: none;
+  }
 }/*# sourceMappingURL=style7.css.map */

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/css/reset.css">
+    <link rel="stylesheet" href="public/css/shopping_cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ibarra+Real+Nova:wght@700&family=Open+Sans:wght@300;400;500&family=Oswald:wght@700&family=Roboto&family=Roboto+Condensed&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <title>Shopping Cart</title>
+</head>
+<body>
+    <header>
+        <div class="container flex a-center j-between">
+            <h2>
+                <a class="logo" href="#">Veggy</a>
+            </h2>
+            <div class="search flex">
+                <input placeholder="Search for Vegetables and Fruits" type="text">
+                <button><i class="fa-solid fa-magnifying-glass"></i></button>
+            </div>
+            <div class="cart flex">
+                <div class="cart-info">
+                    <div class="cart-text no-of-items flex">
+                        <span class="text">No. of item </span>
+                        <span class="m-5"> : </span>
+                        <span class="num-item price"> 0</span>
+                    </div>
+                    <div class="cart-text sub-total flex">
+                        <span class="text">Sub Total</span>
+                        <span class="m-5"> : </span>
+                        <span class="total price"> 0</span>
+                    </div>
+                </div>
+                <div class="cart-icon">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <div class="cart-dropdown">
+                        <!-- <div>
+                            <img src="public/image/empty-cart.png" alt="empty-cart">
+                            <p>Your cart is empty!</p>
+                        </div> -->
+                        <ul class="cart-items">
+                            <li class="flex j-between a-center">
+                                <div class="flex">
+                                    <img src="" alt="" width="50" height="50">
+                                    <div class="item-cart-info flex j-column">
+                                        <span>item 1 </span>
+                                        <i class="fa-solid fa-indian-rupee-sign"> 100 x 5</i>
+                                    </div>
+                                </div>
+                                <button class="btn-delete-cart-item"> x </button>
+                            </li>
+                        </ul>
+                        <button class="btn-checkout disabled">PROCEDURE TO CHECKOUT</button> 
+                        <!-- disable  -->
+                    </div>
+                </div>
+            </div>  
+        </div>
+    </header>
+    <div class="products">
+        <div class="container">
+            <div class="product-lists">
+                <div class="row">
+                    <div class="col">
+                        <div class="item">
+                            <div class="item-image">
+                                <img src="https://res.cloudinary.com/sivadass/image/upload/v1493620046/dummy-products/broccoli.jpg" alt="Brocolli - 1 Kg">
+                            </div>
+                            <h2 class="title">
+                                Brocolli - 1 kg
+                            </h2>
+                            <span class="price"><i class="fa-solid fa-indian-rupee-sign"></i> 120</span>
+                            <div class="cart-quantity flex a-center j-center" >
+                                <button class="btn btn-dec"><i class="fa-solid fa-minus"></i></button>
+                                <input value="1" class="input-quantity" type="number">
+                                <button class="btn btn-inc"><i class="fa-solid fa-plus"></i></button>
+                            </div>
+                            <button class="btn-add">ADD TO CART</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="img-wrapper">
+                <img src="" alt="">
+            </div>
+            <h2>item</h2>
+        </div>
+    </div>
+</body>
+<script src="js/shopping_cart.js"></script>
+</html>

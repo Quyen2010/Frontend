@@ -14,79 +14,116 @@
     <header>
         <div class="container">
             <div class="news">
-                <a href=""><i class="fa-solid fa-newspaper newspaper-icon"></i><h1>NewsBlog</h1></a>
-            </div>
+                <a href="#"><i class="fa-solid fa-newspaper newspaper-icon"></i><h2>NewsBlog</h2></a> <!--chinh h1 thanh h2  -->
+            </div>    
             <div class="search">
                 <div class="icon">
                     <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
                 <input type="text"placeholder="Discover news, articles and more">
+                <div class="iconx">
+                    <i class="fa-solid fa-xmark"></i>
+                </div>
             </div>
-            <nav>
+            <nav><!--semantic nav -->
                 <ul class="main-nav">
-                    <li><a href="">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li>
-                        <a href="">More <span><i class="fa-solid fa-angle-down"></i></span></a>
+                        <a href="#">More <i class="fa-solid fa-angle-down"></i></a> <!-- bo span trong i -->
                         <ul class="dropdown">
-                            <li><a href="">Beauty</a></li>
-                            <li><a href="">Fashion & Style</a></li>
-                            <li><a href="">Food & Wellness</a></li>
-                            <li><a href="">Lifestyle</a></li>
-                            <li><a href="">404 Page</a></li>
+                            <li><a href="#">Beauty</a></li>
+                            <li><a href="#">Fashion & Style</a></li>
+                            <li><a href="#">Food & Wellness</a></li>
+                            <li><a href="#">Lifestyle</a></li>
+                            <li><a href="#">404 Page</a></li>
                         </ul>
                     </li>
-                    <li><a href="">Contact</a></li>
+                    <li><a href="#">Contact</a></li>
                     <li><i class="fa-solid fa-moon"></i></li>
                 </ul>
             </nav>
         </div>
     </header>
-    <div class="card">
+    <div class="card"><!-- co the dung ul li -->
         <div class="container">
             <div class="discription">
                 <div class="card-content">
-                    <a href=""><div class="icon"><i class="fa-solid fa-bath"></i></div><p>Beauty</p></a>
+                    <div class="icon">
+                        <a href="#"><i class="fa-solid fa-bath"></i></a>
+                        <p><a href="#">Beauty</a></p>
+                    </div>
                 </div>
                 <div class="card-content">
-                    <a href=""><div class="icon"><i class="fa-solid fa-person-dress"></i></div><p>Fashion & Style</p></a>
+                    <div class="icon">
+                        <a href="#"><i class="fa-solid fa-bath"></i></a>
+                        <p><a href="#">Fashion & Style</a></p>
+                    </div>
                 </div>
                 <div class="card-content">
-                    <a href=""><div class="icon"><i class="fa-solid fa-utensils"></i></div><p>Food & Wellness</p></a>
+                    <div class="icon">
+                        <a href="#"><i class="fa-solid fa-bath"></i></a>
+                        <p><a href="#">Food & Wellness</a></p>
+                    </div>
                 </div>
                 <div class="card-content">
-                    <a href=""><div class="icon"><i class="fa-solid fa-chart-pie"></i></div><p>Lifestyle</p></a>
+                    <div class="icon">
+                        <a href="#"><i class="fa-solid fa-bath"></i></a>
+                        <p><a href="#">Lifestyle</a></p>
+                    </div>
                 </div>
             </div>
             <div class="featured">
                 <div class="featured-content">
-                    <a href=""><span>Featured</span></a>
-                    <a href=""><p>Create an Art that shows the beauty in everyone's ideas of flaws.</p></a>
-                    <input name="gender" type="radio">
-                    <input name="gender" type="radio">
-                    <input name="gender" type="radio">
-                    <input name="gender" type="radio">
+                    <a href="#">Featured</a>
+                    <h1><a href="#">Create an Art that shows the beauty in everyone's ideas of flaws.</a></h1>
+                    <form action="">
+                        <div class="input-group">
+                            <a href="#">
+                                <input name="gender" id="text1" type="radio">
+                                <label for="text1"></label>
+                            </a>
+                        </div>
+                        <div class="input-group">
+                            <a href="#">
+                                <input name="gender" id="text2" type="radio">
+                                <label for="text2"></label>
+                            </a>
+                        </div>
+                        <div class="input-group">
+                            <a href="#">
+                                <input name="gender" id="text3" type="radio">
+                                <label for="text3"></label>
+                            </a>
+                        </div>
+                        <div class="input-group">
+                            <a href="#">
+                                <input name="gender" id="text4" type="radio">
+                                <label for="text4"></label>
+                            </a>
+                        </div>
+                    </form>
                 </div>
                 <div class="rectangle">
-                    <a href=""><img src="public/image/beauty.jpg" alt="makeup"></a>
+                    <a href="#"><img src="public/image/beauty.jpg" alt="makeup"></a>
                 </div>
             </div>
         </div>
     </div>
     <div class="food">
         <div class="container">
-            <p>Top Pick's of this month</p>
+            <h2>Top Pick's of this month</h2><!-- chỗ này là thẻ h  -->
             <div class="layout">
                 <div class="humberger">
                    <div class="font">
-                        <a href=""><p>Right food baked with natural isngredient, the use of best quality products</p></a>
+                        <p><a href="#">Right food baked with natural isngredient, the use of best quality products</a></p>
                         <div class="release">
-                            <img src="public/image/mmm.jfif" alt="W3layouts">
+                            <a href="#"><img src="public/image/mmm.jfif" alt="W3layouts"></a>
                             <div class="release-content">
-                                <span>W3Layouts</span>
+                                <a href="#">W3Layouts</a>
                                 <div class="oclock">
                                     <span>February 22, 2021</span>
                                     <div class="time">
-                                        <i class="fa-regular fa-clock-eight"></i>
+                                        <i class="fa-solid fa-clock"></i>
                                         <span>7:29 am</span>
                                     </div>
                                 </div>
@@ -97,15 +134,15 @@
                 </div>
                 <div class="healty">
                     <div class="font">
-                         <a href=""><p>The 5 Nonnegotiables of a Healthy Quarantine food that a Doctor-Approved</p></a>
+                         <p><a href="#">The 5 Nonnegotiables of a Healthy Quarantine food that a Doctor-Approved</a></p>
                          <div class="release">
-                             <img src="public/image/mmm.jfif" alt="W3layouts">
+                            <a href="#"><img src="public/image/mmm.jfif" alt="W3layouts"></a>
                              <div class="release-content">
-                                 <span>W3Layouts</span>
+                                <a href="#">W3Layouts</a>
                                  <div class="oclock">
                                      <span>February 22, 2021</span>
                                      <div class="time">
-                                        <i class="fa-solid fa-clock-two-thirty"></i>
+                                        <i class="fa-solid fa-clock"></i>
                                          <span>7:28 am</span>
                                      </div>
                                  </div>
@@ -116,15 +153,15 @@
                  </div>
                  <div class="fashi">
                     <div class="font">
-                        <a href=""><p>Fashion is Creating your Beauty image.The New fashion starts here</p></a>
+                        <p><a href="#">Fashion is Creating your Beauty image.The New fashion starts here</a></p>
                          <div class="release">
-                             <img src="public/image/mmm.jfif" alt="W3layouts">
+                            <a href="#"><img src="public/image/mmm.jfif" alt="W3layouts"></a>
                              <div class="release-content">
-                                 <span>W3Layouts</span>
+                                <a href="#">W3Layouts</a>
                                  <div class="oclock">
                                      <span>February 22, 2021</span>
                                      <div class="time">
-                                        <i class="fa-solid fa-clock-two-thirty"></i>
+                                        <i class="fa-solid fa-clock"></i>
                                          <span>7:26 am</span>
                                      </div>
                                  </div>
@@ -138,24 +175,188 @@
     </div>
     <div class="fashion">
         <div class="container">
-            <p>Editor's Pick</p>
-            <div class="fashion-content">
-                <div class="rectangle">
-                    <img src="public/image/giay.jpg" alt="trang_phuc">
-                    <div class="contentt">
-                        <div class="topic">
-                            <span>Fashion & Style</span>
+            <div class="group">
+                <div class="editorpick">
+                    <h2>Editor's Pick</h2>
+                    <div class="fashion-content">
+                        <div class="rectangle">
+                            <a href="#"><img src="public/image/giay.jpg" alt="trang_phuc"></a>
+                            <div class="contentt">
+                                <div class="topic">
+                                    <a href="#">Fashion & Style</a>
+                                </div>
+                                <p><a href="#">What i'll be Wearing this Party Season & the Festive edit</a></p>                              
+                                <div class="release">
+                                    <a href="#"><img src="public/image/mmm.jfif" alt="W3layouts"></a>
+                                    <div class="release-content">
+                                        <a href="#">W3Layouts</a>
+                                        <div class="oclock">
+                                            <span>February 22, 2021.</span>
+                                            <div class="time">
+                                                <i class="fa-solid fa-clock"></i>
+                                                <span>7:49 am</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <p>What i'll be Wearing this Party Season & the Festive edit</p>
-                        <div class="release">
-                            <img src="public/image/mmm.jfif" alt="W3layouts">
-                            <div class="release-content">
-                                <span>W3Layouts</span>
-                                <div class="oclock">
-                                    <span>February 22, 2021.</span>
-                                    <div class="time">
-                                        <i class="fa-solid fa-clock-two-thirty"></i>
-                                        <span>7:49 am</span>
+                        <div class="rectangle">
+                            <a href="#"><img src="public/image/women2.jpg" alt="woman"></a>
+                            <div class="contentt">
+                                <div class="topic">
+                                    <a href="#">Fashion & Style</a>
+                                </div>
+                                <p><a href="#">An easy Guide to buying Denim & My favorite styles</a></p>                              
+                                <div class="release">
+                                    <a href=""><img src="public/image/mmm.jfif" alt="W3layouts"></a>
+                                    <div class="release-content">
+                                        <a href="#">W3Layouts</a>
+                                        <div class="oclock">
+                                            <span>February 22, 2021.</span>
+                                            <div class="time">
+                                                <i class="fa-solid fa-clock"></i>
+                                                <span>7:49 am</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <nav>
+                    <h2>Topics</h2>
+                    <ul><!--them # -->
+                        <li><a href="#">Beauty</a></li>
+                        <li><a href="#">Fashion & Style</a></li>
+                        <li><a href="#">Featured</a></li>
+                        <li><a href="#">Food & Wellness</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Top Picks</a></li>
+                        <li><a href="#">uncategorized</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="group2">
+                <div class="editorpick">
+                    <div class="fashion-content">
+                        <div class="rectangle">
+                            <a href="#"><img src="public/image/fashion3.jpg" alt = "fashion3"></a> 
+                            <div class="contentt">
+                                <div class="topic">
+                                    <a href="#">Fashion & Style</a>
+                                </div>
+                                <p><a href="#">3 New Outfit Formulas To Add To Your Capsule Wardrobe</a></p>                          
+                                <div class="release">
+                                    <a href="#"><img src="public/image/mmm.jfif" alt="W3layouts"></a>
+                                    <div class="release-content">
+                                        <a href="#">W3Layouts</a>
+                                        <div class="oclock">
+                                            <span>February 22, 2021.</span>
+                                            <div class="time">
+                                                <i class="fa-solid fa-clock"></i>
+                                                <span>7:48 am</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rectangle">
+                            <a href="#"><img src="public/image/fashion4.jpg" alt="fashion4"></a> 
+                            <div class="contentt">
+                                <div class="topic">
+                                    <a href="#">Fashion & Style</a>
+                                </div>
+                                <p><a href="#">3 New Outfit Formuals To Add To Your Capsule Wardrobe</a></p>                              
+                                <div class="release">
+                                    <a href="#"><img src="public/image/mmm.jfif" alt="W3layouts"></a>
+                                    <div class="release-content">
+                                        <a href="#">W3Layouts</a>
+                                        <div class="oclock">
+                                            <span>February 22, 2021.</span>
+                                            <div class="time">
+                                                <i class="fa-solid fa-clock"></i>
+                                                <span>7:47 am</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sponsers">
+                    <h3>Our sponsers</h3>
+                    <a href="#"><img src="public/image/ad.jpg" alt="dongho"></a>
+                    <a href="#"><p>ADVERTISE WITH US</p></a>
+                </div>
+            </div>
+            <div class="advertise">
+                <h2>Advertise with us</h2>
+                <a href="#">Learn more</a><!-- chi can the a hk span -->
+            </div>
+            <div class="group3">
+                <div class="editorpick">
+                    <div class="fashionandstyle">
+                        <h2>Fashion and style</h2>
+                        <a href="#">View more</a><!-- bo span thay a -->
+                    </div>
+                    <div class="fashion-content">
+                        <div class="rectangle">
+                            <a href="#"><img src="public/image/giay.jpg" alt="trang_phuc"></a>
+                            <div class="contentt">
+                                <p><a href="#">What i'll be Wearing this Party Season & the Festive edit</a></p>                              
+                                <div class="release">
+                                    <a href="#"><img src="public/image/mmm.jfif" alt="W3layouts"></a>
+                                    <div class="release-content">
+                                        <a href="#">W3Layouts</a>
+                                        <div class="oclock">
+                                            <span>February 22, 2021.</span>
+                                            <div class="time">
+                                                <i class="fa-solid fa-clock"></i>
+                                                <span>7:49 am</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rectangle">
+                            <a href="#"><img src="public/image/women2.jpg" alt="woman"></a>
+                            <div class="contentt">
+                                <p><a href="#">An easy Guide to buying Denim & My favorite styles</a></p>                               
+                                <div class="release">
+                                    <a href="#"><img src="public/image/mmm.jfif" alt="W3layouts"></a>
+                                    <div class="release-content">
+                                        <a href="#">W3Layouts</a>
+                                        <div class="oclock">
+                                            <span>February 22, 2021.</span>
+                                            <div class="time">
+                                                <i class="fa-solid fa-clock"></i>
+                                                <span>7:49 am</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rectangle">
+                            <a href="#"><img src="public/image/fashion3.jpg" alt = "fashion3"></a>
+                            <div class="contentt">
+                                <p><a href="#">3 New Outfit Formulas To Add To Your Capsule Wardrobe</a></p>                              
+                                <div class="release">
+                                    <a href="#"><img src="public/image/mmm.jfif" alt="W3layouts"></a>
+                                    <div class="release-content">
+                                        <a href="#">W3Layouts</a>
+                                        <div class="oclock">
+                                            <span>February 22, 2021.</span>
+                                            <div class="time">
+                                                <i class="fa-solid fa-clock"></i>
+                                                <span>7:48 am</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -165,5 +366,203 @@
             </div>
         </div>
     </div>
+    <div class="beauty">
+        <div class="container">
+            <div class="viewmore">
+                <h2>Beauty</h2>
+                <a href="#">View more</a>
+            </div>
+            <div class="layout1">
+                <div class="frame">
+                    <a href="#"><img src="public/image/beauty1.jpg" alt="beauty1"></a>
+                    <div class="frame-content">
+                        <p><a href="#">Why you need a Spa Day, Reasons to Get a Package</a></p>
+                        <div class="release">
+                            <a href="#"><img src="public/image/mmm.jfif" alt="W3layouts"></a>
+                            <div class="release-content">
+                                <a href="#">W3Layouts</a>
+                                <div class="oclock">
+                                    <span>January 8, 2021.</span>
+                                    <div class="time">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <span>2:12 pm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame">
+                    <a href="#"><img src="public/image/beauty2.jpg" alt="beauty2"></a>
+                    <div class="frame-content">
+                        <p><a href="#">Winter: 4 Ways to Feel Great during the Cold Weather</a></p>
+                        <div class="release">
+                            <a href="#"><img src="public/image/mmm.jfif" alt="W3layouts"></a>
+                            <div class="release-content">
+                                <a href="#">W3Layouts</a>
+                                <div class="oclock">
+                                    <span>January 8, 2021.</span>
+                                    <div class="time">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <span>2:11 pm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="layout2">
+                <div class="frame">
+                    <a href="#"><img src="public/image/beauty3.jpg" alt="beauty3"></a>
+                    <div class="frame-content">
+                        <p><a href="#">Key to Glowing Skin: 5 tips for hydration and protection</a></p>
+                        <div class="release">
+                            <a href="#"><img src="public/image/mmm.jfif" alt="W3layouts"></a>
+                            <div class="release-content">
+                                <a href="#">W3Layouts</a>
+                                <div class="oclock">
+                                    <span>January 8, 2021.</span>
+                                    <div class="time">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <span>2:10 pm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame">
+                    <a href="#"><img src="public/image/beauty4.jpg" alt="beauty4"></a>
+                    <div class="frame-content">
+                        <p><a href="#">Take steps to beautiful Summer Feet with Spa experience</a></p>
+                        <div class="release">
+                            <a href="#"><img src="public/image/mmm.jfif" alt="W3layouts"></a>
+                            <div class="release-content">
+                                <a href="#">W3Layouts</a>
+                                <div class="oclock">
+                                    <span>January 8, 2021.</span>
+                                    <div class="time">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <span>2:09 pm</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="trending">
+        <div class="container">
+            <div class="viewmore">
+                <h2>Trending Now</h2>
+            </div>
+            <div class="layout">
+                <div class="frame">
+                    <a href="#"><img src="public/image/lifestyle5.jpg" alt="lifestyle5"></a>
+                    <div class="frame-content">
+                        <div class="topic">
+                            <a href="#">Lifestyle</a>
+                        </div>
+                        <p><a href="#">3 New Outfit Formulas To Add To Your Capsule Wardrobe</a></p>
+                        <div class="release">
+                            <a href="#"><img src="public/image/mmm.jfif" alt="W3layouts"></a>
+                            <div class="release-content">
+                                <a href="#">W3Layouts</a>
+                                <div class="oclock">
+                                    <span>February 27, 2021.</span>
+                                    <div class="time">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <span>7:48 am</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame">
+                    <a href="#"><img src="public/image/lifestyle7.jpg" alt="lifestyle7"></a>
+                    <div class="frame-content">
+                        <div class="topic">
+                            <a href="#">Lifestyle</a>
+                        </div>
+                        <p><a href="#">Blog Guide: How to Start a Personal Blog on WordPress</a></p>
+                        <div class="release">
+                            <a href="#"><img src="public/image/mmm.jfif" alt="W3layouts"></a>
+                            <div class="release-content">
+                                <a href="#">W3Layouts</a>
+                                <div class="oclock">
+                                    <span>February 27, 2021.</span>
+                                    <div class="time">
+                                        <i class="fa-solid fa-clock"></i>
+                                        <span>7:48 am</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="respond">
+        <div class="container">
+            <div class="content">
+                <h2>Subscribe to our newsletter!</h2>
+                <p>We'll send you the best of our blog just once a month.We promise</p>
+                <div class="address">
+                    <input type="email" placeholder="Email address">
+                    <a href="#">Subscribe</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="information">
+                <div class="newblog">
+                    <div class="news">
+                        <a href="#"><i class="fa-solid fa-newspaper newspaper-icon"></i></a>
+                        <h2><a href="#">NewsBlog</a></h2>
+                    </div>
+                    <div class="icon-circle">
+                        <i class="fa-regular fa-circle-check circle"></i>
+                        <h3>2022. All Right Reserved</h3>
+                    </div>
+                    <p>Theme by <a href="#">W3Layouts</a></p>
+                </div>
+                <div class="Resent_post">
+                    <h2>Recent Posts</h2>
+                    <p><a href="#">3 New Outfit Formilas To Add To Your Capsule Wardrobe</a></p>
+                    <span>February 27, 2021</span>
+                    <p><a href="#">Blog Guide: How to Start a Personal Blog on WordPress</a></p>
+                    <span>February 27, 2021</span>
+                    <p><a href="#">The technical setup when starting a personal blog</a></p>
+                    <span>February 27, 2021</span>
+                </div>
+                <nav class="Caegories">
+                    <ul>Categories
+                        <li><a href="#">Beauty</a></li>
+                        <li><a href="#">Fashion & Style</a></li>
+                        <li><a href="#">Featured</a></li>
+                        <li><a href="#">Food & Wellness</a></li>
+                        <li><a href="#">Lifestyle</a></li>
+                        <li><a href="#">Top Picks</a></li>
+                        <li><a href="#">uncategorized</a></li>
+                    </ul>
+                </nav>
+                <nav class="Social-media">
+                    <ul>Social Media
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Linkedin</a></li>
+                        <li><a href="#">Dribbble</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

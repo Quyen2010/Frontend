@@ -1,0 +1,363 @@
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+body, html {
+  font-family: "Roboto", sans-serif;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+
+.agrowfarm {
+  font-size: 25px;
+  font-family: "Roboto", sans-serif;
+}
+.agrowfarm h2 {
+  color: black;
+}
+.agrowfarm span {
+  color: orange;
+}
+
+nav ul.main-nav {
+  display: flex;
+}
+nav ul.main-nav > li {
+  position: relative;
+  margin-left: 15px;
+  font-size: 15px;
+  padding: 10px 0px;
+}
+nav ul.main-nav > li:hover .dropdown {
+  display: block;
+}
+nav ul.main-nav > li > a {
+  color: #535c68;
+}
+nav ul.main-nav > li > a:hover {
+  color: #f0932b;
+}
+nav ul.dropdown {
+  background-color: white;
+  width: 150px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+}
+nav ul.dropdown li a {
+  color: #2d3436;
+  padding: 5px;
+  display: block;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+}
+.search input {
+  border: 1px solid #dcdde1;
+  padding: 15px 8px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.search input:hover {
+  border: 1px solid #535c68;
+}
+.search a {
+  color: #2d3436;
+  background-color: #e58e26;
+  font-weight: 600;
+  margin: 0px 10px;
+  padding: 15px 40px;
+  border-radius: 5px;
+}
+
+.organic {
+  background-color: #dff9fb;
+  height: 700px;
+}
+.organic .organic_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 200px;
+}
+.organic .organic_content .welcome {
+  padding-right: 100px;
+}
+.organic .organic_content .welcome h1 {
+  font-size: 80px;
+  margin: 20px 0px;
+}
+.organic .organic_content .welcome a {
+  display: inline-block;
+  color: #2d3436;
+  background-color: #e58e26;
+  font-weight: 600;
+  margin: 20px 0px;
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
+.ourinfo {
+  height: 600px;
+}
+.ourinfo .agriculture-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.ourinfo .agriculture-content .content {
+  margin-right: 30px;
+}
+.ourinfo .agriculture-content .content h4 {
+  color: #f0932b;
+  font-size: 15px;
+}
+.ourinfo .agriculture-content .content h2 {
+  font-size: 40px;
+  margin: 20px 0px;
+}
+.ourinfo .agriculture-content .content p {
+  margin-bottom: 20px;
+  color: #918888;
+  text-align: justify;
+}
+.ourinfo .agriculture-content .content .icon-check {
+  display: flex;
+  align-items: center;
+}
+.ourinfo .agriculture-content .content .icon-check i {
+  margin: 10px 0px;
+  color: #009432;
+  margin-right: 5px;
+}
+.ourinfo .agriculture-content .img_fresh {
+  display: flex;
+}
+.ourinfo .agriculture-content .img_fresh > img {
+  width: 250px;
+  height: 100%;
+  margin-right: 25px;
+}
+.ourinfo .agriculture-content .img_fresh .rice img {
+  padding-top: 30px;
+  width: 250px;
+}
+
+.farmer {
+  height: 600px;
+  background-color: #dfe4ea;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.farmer .offering {
+  text-align: center;
+  height: 500px;
+}
+.farmer .offering h4 {
+  color: #e58e26;
+}
+.farmer .offering h2 {
+  padding: 20px 0px 50px;
+  font-size: 30px;
+}
+.farmer .offering .offering-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.farmer .offering .offering-content .leader {
+  text-align: center;
+}
+.farmer .offering .offering-content .leader img {
+  width: 350px;
+}
+.farmer .offering .offering-content .leader h3 a {
+  background-color: #ffffff;
+  color: #125c4c;
+  padding: 10px 50px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.farmer .offering .offering-content .leader p {
+  margin-top: 20px;
+  width: 300px;
+  color: #918888;
+}
+.farmer .offering .offering-content .Quality {
+  text-align: center;
+}
+.farmer .offering .offering-content .Quality img {
+  width: 350px;
+}
+.farmer .offering .offering-content .Quality h3 a {
+  background-color: #ffffff;
+  color: #125c4c;
+  padding: 10px 50px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.farmer .offering .offering-content .Quality p {
+  margin-top: 20px;
+  width: 300px;
+  color: #918888;
+}
+.farmer .offering .offering-content .services {
+  text-align: center;
+}
+.farmer .offering .offering-content .services img {
+  width: 350px;
+}
+.farmer .offering .offering-content .services h3 a {
+  background-color: #ffffff;
+  color: #125c4c;
+  padding: 10px 50px;
+  border-radius: 5px;
+  font-size: 18px;
+}
+.farmer .offering .offering-content .services p {
+  margin-top: 20px;
+  width: 300px;
+  color: #918888;
+}
+
+.agrculture .growing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+}
+.agrculture .growing img {
+  margin-right: 100px;
+}
+.agrculture .growing .growing-content {
+  align-items: flex-start;
+  z-index: 1;
+}
+.agrculture .growing .growing-content h4 {
+  color: #e58e26;
+}
+.agrculture .growing .growing-content h2 {
+  font-size: 35px;
+  margin: 20px 0px;
+}
+.agrculture .growing .growing-content p {
+  color: #95a5a6;
+}
+
+.nature {
+  position: relative;
+  z-index: -3;
+  background: url(../image/agriculture_bap.jpg) no-repeat center/cover;
+}
+.nature::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(51, 51, 51, 0.7);
+  z-index: -2;
+}
+.nature .nature-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 600px;
+}
+.nature .nature-content .root {
+  z-index: -1;
+}
+.nature .nature-content .root h4 {
+  color: #e67e22;
+}
+.nature .nature-content .root h2 {
+  color: white;
+  font-size: 40px;
+  margin: 20px 0px;
+}
+.nature .nature-content .root p {
+  color: white;
+  width: 600px;
+  margin-top: 20px;
+}
+.nature .nature-content .root a {
+  display: inline-block;
+  margin-top: 50px;
+  border-radius: 5px;
+  border: 1px solid white;
+  padding: 15px 30px;
+  color: white;
+  font-weight: bold;
+}
+.nature .nature-content .music {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: relative;
+  z-index: 0;
+  transition: 0.5s;
+}
+.nature .nature-content .music::after {
+  content: "";
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: white;
+  z-index: -1;
+  -webkit-animation: play-animation 2s forwards infinite linear;
+          animation: play-animation 2s forwards infinite linear;
+}
+.nature .nature-content .music i {
+  font-size: 20px;
+  color: green;
+}
+@-webkit-keyframes play-animation {
+  40% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  60% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0.3;
+  }
+}
+@keyframes play-animation {
+  40% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  60% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0.3;
+  }
+}/*# sourceMappingURL=agrowfarm.css.map */

@@ -1,0 +1,128 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+html, body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+form {
+  width: 400px;
+  box-shadow: 0px 0px 5px -2px rgba(51, 51, 51, 0.5);
+  text-align: center;
+  padding-bottom: 30px;
+  border-radius: 20px;
+}
+form .form-info {
+  margin: 20px;
+}
+form .form-info h2 {
+  font-size: 30px;
+}
+form .form-info p {
+  margin-top: 10px;
+}
+form .price {
+  text-align: start;
+}
+form .price .sub {
+  padding: 0px 20px;
+  margin-bottom: 10px;
+}
+form .price .sub input {
+  display: none;
+}
+form .price .sub input:checked ~ label::after {
+  opacity: 1;
+  color: white;
+}
+form .price .sub input:checked ~ label::before {
+  background-color: #333;
+}
+form .price .sub input:checked ~ label {
+  border: 3px solid #2980b9;
+  border-radius: 3px;
+}
+form .price .sub label {
+  position: relative;
+  display: block;
+  padding: 10px;
+  border: 3px solid rgba(51, 51, 51, 0.4);
+  border-radius: 3px;
+}
+form .price .sub label .content {
+  padding-left: 30px;
+}
+form .price .sub label .content .best-value {
+  background-color: #2980b9;
+  color: white;
+  display: inline-block;
+  border-radius: 50px;
+  padding: 5px 12px;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+form .price .sub label .content h3 {
+  font-size: 17px;
+}
+form .price .sub label::after {
+  content: "\f00c";
+  font-weight: 700;
+  font-family: "Font Awesome 6 Free";
+  position: absolute;
+  left: 11px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: 0.4s;
+  font-size: 14px;
+}
+form .price .sub label:before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 1px solid #333;
+  position: absolute;
+  left: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 0.4s;
+}
+form .continue {
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+}
+form .continue a span {
+  display: block;
+  background-color: #333;
+  border-radius: 50px;
+  padding: 8px 50px;
+  margin-top: 20px;
+  font-size: 14px;
+  color: white;
+}
+form .continue .paypal {
+  border: 1px solid #333;
+  border-radius: 50px;
+  font-size: 14px;
+  padding: 8px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0px;
+}
+form .continue .paypal img {
+  width: 50px;
+}
+form .continue .paypal a {
+  color: #333;
+  font-weight: bold;
+}
+form .continue a {
+  color: #0652DD;
+}/*# sourceMappingURL=input1.css.map */

@@ -1,0 +1,31 @@
+body{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh;
+}
+html, body{
+    font-family:'Roboto', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+} 
+ul{
+    width:500px;
+    li{
+        border-radius: 5px;
+        padding: 20px;
+        background-color: #333;
+        color:white;
+        margin-bottom: 20px;
+    }
+}
+.btn{
+    padding:9px 12px;
+    background-color: thistle;
+    border-radius: 4px;
+    font-size: 20px;
+    cursor: pointer;
+    &.btn-add{
+        // background-color: goldenrod;
+        // background-color: rgba(56, 103, 214, 0.5);
+        background-color: rgba($color: #3867d6, $alpha: 0.7);
+    }
+}

@@ -1,0 +1,364 @@
+.container{
+    width:1100px;
+    margin:0 auto;
+}
+body,html{
+    font-family: 'Roboto', sans-serif;
+}
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height:80px;
+}
+.agrowfarm{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    h2{
+       color:black;
+
+    }
+    span{
+        color:orange;
+    }
+}
+nav{
+    ul{
+        &.main-nav{
+            display: flex;
+           >li{
+                position:relative;
+                margin-left:15px;
+                font-size: 15px;
+                padding:10px 0px;
+                &:hover{
+                    .dropdown{
+                        display: block;
+                    }
+                }
+                >a{
+                    color:#535c68;
+                    &:hover{
+                        color:#f0932b;
+                    }
+                }
+            }
+        }
+        &.dropdown{
+            background-color:white;
+            width: 150px;
+            position:absolute;
+            top:100%;
+            left:0;
+            display: none;
+            li{
+                a{
+                    color:#2d3436;
+                    padding:5px;
+                    display: block;
+                }
+            }
+        }
+
+    }
+}
+.search{
+    display: flex;
+    align-items: center;
+    input{
+        border:1px solid #dcdde1;
+        padding:15px 8px;
+        font-size: 16px;
+        border-radius: 5px;
+        &:hover{
+            border:1px solid #535c68;
+        }
+    }
+    a{
+        color:#2d3436;
+        background-color: #e58e26;
+        font-weight: 600;
+        margin:0px 10px;
+        padding:15px 40px;
+        border-radius: 5px;
+    }
+}
+.organic{
+    background-color: #dff9fb;
+    height:700px;
+    .organic_content{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding-top:200px;
+        .welcome{
+            padding-right:100px;
+            h1{
+                font-size: 80px;
+                margin:20px 0px;
+            }
+            a{
+                display: inline-block;
+                color:#2d3436;
+                background-color: #e58e26;
+                font-weight: 600;
+                margin:20px 0px;
+                padding:15px 30px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+.ourinfo{
+    height:600px;
+    .agriculture-content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top:100px;
+        .content{
+            margin-right:30px;
+            h4{
+                color:#f0932b;
+                font-size: 15px;
+            }
+            h2{
+                font-size: 40px;
+                margin:20px 0px;
+            }
+            p{
+                margin-bottom: 20px;
+                color: #918888;
+                text-align: justify;
+            }
+            .icon-check{
+                display: flex;
+                align-items: center;
+                i{
+                    margin: 10px 0px;
+                    color:#009432;
+                    margin-right: 5px;
+                }
+                h3{
+
+                }
+            }
+        }
+        .img_fresh{
+            display: flex;
+            >img{
+                width: 250px;
+                height:100%;
+                margin-right:25px;
+            }
+            .rice{
+                img{
+                    padding-top:30px;
+                    width: 250px;
+                }
+            }
+        }
+    }
+}
+.farmer{
+    height:600px;
+    background-color: #dfe4ea;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .offering{
+        text-align: center;
+        height:500px;
+        h4{
+
+            color:#e58e26;
+        }
+        h2{
+            padding:20px 0px 50px;
+            font-size: 30px;
+
+        }
+        .offering-content{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .leader{
+                text-align: center;
+                img{
+                    width: 350px;
+                }
+                h3{
+                    a{
+                        background-color: #ffffff;
+                        color:#125c4c;
+                        padding:10px 50px;
+                        border-radius: 5px;
+                        font-size: 18px;
+                    }
+                }
+                p{
+                    margin-top: 20px;
+                    width: 300px;
+                    color: #918888;
+                }
+            }
+            .Quality{
+                text-align: center;
+                img{
+                    width: 350px;
+                }
+                h3{
+                    a{
+                        background-color: #ffffff;
+                        color:#125c4c;
+                        padding:10px 50px;
+                        border-radius: 5px;
+                        font-size: 18px;
+                    }
+                }
+                p{
+                    margin-top: 20px;
+                    width: 300px;
+                    color: #918888;
+                }
+            }
+            .services{
+                text-align: center;
+                img{
+                    width: 350px;
+                }
+                h3{
+                    a{
+                        background-color: #ffffff;
+                        color:#125c4c;
+                        padding:10px 50px;
+                        border-radius: 5px;
+                        font-size: 18px;
+                    }
+                }
+                p{
+                    margin-top: 20px;
+                    width: 300px;
+                    color: #918888;
+                }
+            }
+        }
+    }
+}
+.agrculture{
+    .growing{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height:600px;
+        img{
+            margin-right: 100px;
+        }
+        .growing-content{
+            align-items: flex-start;
+            z-index: 1;
+            h4{
+                color: #e58e26;
+            }
+            h2{
+                font-size: 35px;
+                margin:20px 0px;
+            }
+            p{
+                color:#95a5a6;
+            }
+        }
+    }
+}
+.nature{
+    position: relative;
+    z-index:-3 ;
+    background:url(../image/agriculture_bap.jpg) no-repeat center / cover;
+    &::after{
+        content:'';
+        position: absolute;
+        top:0;
+        left:0;
+        width: 100%;
+        height:100%;
+        background-color: rgba(#333 ,0.7);
+        z-index: -2;
+    }
+    .nature-content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 600px;
+        .root{
+            z-index: -1;
+            h4{
+                color:#e67e22;
+            }
+            h2{
+                color:white;
+                font-size: 40px;
+                margin:20px 0px;
+            }
+            p{
+                color:white;
+                width: 600px;
+                margin-top:20px;
+            }
+            a{
+                display: inline-block;
+                margin-top:50px;
+                border-radius: 5px;
+                border:1px solid white;
+                padding:15px 30px;
+                color:white;
+                font-weight: bold;
+            }
+        }
+        .music{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: white;
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            position: relative;
+            z-index: 0;
+            transition: 0.5s;
+            &::after{
+                content: '';
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                display: block;
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                top:0;
+                left:0;
+                background-color:white;
+                z-index: -1;
+                animation: play-animation 2s forwards infinite linear;
+            }
+            i{
+                font-size: 20px;
+                color:green;
+            }
+        }
+        @keyframes play-animation {
+            40%{
+                transform: scale(1);
+                opacity:0.7;
+            }
+            60%{
+                transform: scale(1.5);
+                opacity: 0.5;
+            }
+            100%{
+                transform: scale(2);
+                opacity: 0.3;
+            }
+        }
+    }
+}
+

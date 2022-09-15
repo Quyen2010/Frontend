@@ -1,4 +1,4 @@
-*{
+*, *::after,*::before{
     padding:0;
     margin: 0;
     box-sizing: border-box;
@@ -12,7 +12,16 @@ a{
 img{
     display: block;
 }
-input{
+input, button{
     outline:none;
     border:none;
+    background-color:none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button{
+    -webkit-appearance:none;
+    margin:0;
+}
+input[type= number]{
+    -moz-appreance:textfield;
 }

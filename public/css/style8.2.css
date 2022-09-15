@@ -1,0 +1,334 @@
+.container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+.title {
+  height: 1350px;
+  background-color: #3e94d6;
+}
+.title .container .title-content {
+  color: white;
+}
+.title .container .title-content h1 {
+  font-family: "Roboto", sans-serif;
+  padding-top: 150px;
+  font-size: 80px;
+  width: 710px;
+  font-weight: bold;
+}
+.title .container .title-content .transform {
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+}
+.title .container .title-content .content {
+  text-align: justify;
+  font-family: "Ibarra Real Nova", serif;
+  width: 710px;
+  margin-top: 70px;
+  font-size: medium;
+}
+.title .container .title-content .credit {
+  font-size: smaller;
+  margin-top: 50px;
+  font-family: "Ibarra Real Nova", serif;
+}
+.title .container .example {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+.title .container .example a {
+  color: white;
+}
+.title .container .example a:hover {
+  color: black;
+}
+.title .container .example a p {
+  display: block;
+  border: 1px solid white;
+  margin: 50px 10px;
+  padding: 10px;
+}
+.title .image1 {
+  display: flex;
+  width: 1200px;
+  height: 300px;
+  margin-left: 20px;
+}
+.title .image1 .img1 {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+.title .image1 .img1:hover .banner {
+  transform: translateY(0);
+}
+.title .image1 .img1:hover .blug-bg {
+  transform: translateY(0);
+}
+.title .image1 .img1 img {
+  display: block;
+  width: 400px;
+  height: 300px;
+}
+.title .image1 .img1 .banner {
+  transition: 0.15s;
+  position: absolute;
+  transform: translateY(100%);
+  bottom: 0;
+  z-index: 1;
+  color: white;
+  width: 400px;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+.title .image1 .img1 .banner h1 {
+  margin: 20px 0px;
+  font-size: 20px;
+}
+.title .image1 .img1 .banner p {
+  margin: 20px 0px;
+}
+.title .image1 .img1 .blug-bg {
+  transition: 0.15s;
+  position: absolute;
+  transform: translateY(100%);
+  bottom: 0;
+  width: 400px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.title .image1 .img2 {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+.title .image1 .img2:hover .banner {
+  transform: translateY(0);
+}
+.title .image1 .img2:hover .blug-bg {
+  transform: translateY(0);
+}
+.title .image1 .img2 img {
+  display: block;
+  width: 400px;
+  height: 300px;
+}
+.title .image1 .img2 .banner {
+  transition: 0.15s;
+  position: absolute;
+  transform: translateY(100%);
+  bottom: 0;
+  z-index: 1;
+  color: white;
+  width: 400px;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+.title .image1 .img2 .banner h1 {
+  margin: 20px 0px;
+  font-size: 20px;
+}
+.title .image1 .img2 .banner p {
+  margin: 20px 0px;
+}
+.title .image1 .img2 .blug-bg {
+  transition: 0.15s;
+  position: absolute;
+  transform: translateY(100%);
+  bottom: 0;
+  width: 400px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.title .image1 .img3 {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+.title .image1 .img3:hover .banner {
+  transform: translateY(0);
+}
+.title .image1 .img3:hover .blug-bg {
+  transform: translateY(0);
+}
+.title .image1 .img3 img {
+  display: block;
+  width: 400px;
+  height: 300px;
+}
+.title .image1 .img3 .banner {
+  transition: 0.15s;
+  position: absolute;
+  transform: translateY(100%);
+  bottom: 0;
+  z-index: 1;
+  color: white;
+  width: 400px;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+.title .image1 .img3 .banner h1 {
+  margin: 20px 0px;
+  font-size: 20px;
+}
+.title .image1 .img3 .banner p {
+  margin: 20px 0px;
+}
+.title .image1 .img3 .blug-bg {
+  transition: 0.15s;
+  position: absolute;
+  transform: translateY(100%);
+  bottom: 0;
+  width: 400px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.title .image2 {
+  display: flex;
+  width: 1200px;
+  height: 300px;
+  margin-left: 20px;
+}
+.title .image2 .img4 {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+.title .image2 .img4:hover .banner {
+  transform: translateY(0);
+}
+.title .image2 .img4:hover .blug-bg {
+  transform: translateY(0);
+}
+.title .image2 .img4 img {
+  display: block;
+  width: 400px;
+  height: 300px;
+}
+.title .image2 .img4 .banner {
+  transition: 0.15s;
+  position: absolute;
+  transform: translateY(100%);
+  bottom: 0;
+  z-index: 1;
+  color: white;
+  width: 400px;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+.title .image2 .img4 .banner h1 {
+  margin: 20px 0px;
+  font-size: 20px;
+}
+.title .image2 .img4 .banner p {
+  margin: 20px 0px;
+}
+.title .image2 .img4 .blug-bg {
+  transition: 0.15s;
+  position: absolute;
+  transform: translateY(100%);
+  bottom: 0;
+  width: 400px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.title .image2 .img5 {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+.title .image2 .img5:hover .banner {
+  transform: translateY(0);
+}
+.title .image2 .img5:hover .blug-bg {
+  transform: translateY(0);
+}
+.title .image2 .img5 img {
+  display: block;
+  width: 400px;
+  height: 300px;
+}
+.title .image2 .img5 .banner {
+  transition: 0.15s;
+  position: absolute;
+  transform: translateY(100%);
+  bottom: 0;
+  z-index: 1;
+  color: white;
+  width: 400px;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+.title .image2 .img5 .banner h1 {
+  margin: 20px 0px;
+  font-size: 20px;
+}
+.title .image2 .img5 .banner p {
+  margin: 20px 0px;
+}
+.title .image2 .img5 .blug-bg {
+  transition: 0.15s;
+  position: absolute;
+  transform: translateY(100%);
+  bottom: 0;
+  width: 400px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.title .image2 .img6 {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  overflow: hidden;
+}
+.title .image2 .img6:hover .banner {
+  transform: translateY(0);
+}
+.title .image2 .img6:hover .blug-bg {
+  transform: translateY(0);
+}
+.title .image2 .img6 img {
+  display: block;
+  width: 400px;
+  height: 300px;
+}
+.title .image2 .img6 .banner {
+  transition: 0.15s;
+  position: absolute;
+  transform: translateY(100%);
+  bottom: 0;
+  z-index: 1;
+  color: white;
+  width: 400px;
+  justify-content: center;
+  align-items: flex-end;
+  text-align: center;
+}
+.title .image2 .img6 .banner h1 {
+  margin: 20px 0px;
+  font-size: 20px;
+}
+.title .image2 .img6 .banner p {
+  margin: 20px 0px;
+}
+.title .image2 .img6 .blug-bg {
+  transition: 0.15s;
+  position: absolute;
+  transform: translateY(100%);
+  bottom: 0;
+  width: 400px;
+  height: 100px;
+  background-color: rgba(0, 0, 0, 0.6);
+}/*# sourceMappingURL=style8.2.css.map */
